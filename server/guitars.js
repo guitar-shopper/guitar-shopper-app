@@ -13,19 +13,19 @@ module.exports = require('express').Router()
             .then(guitar => res.status(201).json(guitar))
             .catch(next))
     .get('/:id',
-    mustBeLoggedIn,
+    // mustBeLoggedIn,
     (req, res, next) =>
         Guitar.findById(req.params.id)
             .then(guitar => res.json(guitar))
             .catch(next))
     .put('/:id',
-    mustBeLoggedIn,
+    // mustBeLoggedIn,
     (req, res, next) =>
         Guitar.update(req.body, {where: {id:req.params.id}})
             .then(guitar => res.json(guitar))
             .catch(next))
     .delete('/:id',
-    mustBeLoggedIn,
+    // mustBeLoggedIn,
     (req, res, next) =>
         Guitar.destroy({
             where: {

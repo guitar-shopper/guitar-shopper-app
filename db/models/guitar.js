@@ -3,7 +3,7 @@
 const Sequelize = require('sequelize')
 
 module.exports = db => db.define('guitars', {
-  name: {
+  model: {
     type: Sequelize.STRING,
     allowNull: false,
   },

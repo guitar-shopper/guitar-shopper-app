@@ -15298,7 +15298,7 @@ var WhoAmI = exports.WhoAmI = function WhoAmI(_ref) {
     )
   );
 };
-
+// import {login} from 'guitar-shopper-app/app/reducers/auth'
 exports.default = (0, _reactRedux.connect)(function (_ref2) {
   var auth = _ref2.auth;
   return { user: auth };
