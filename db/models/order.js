@@ -7,6 +7,7 @@ module.exports = db => db.define('orders', {
         type: Sequelize.DATE,
         defaultValue: Sequelize.NOW
     }
+    // OB/BJM: order status
 })
 
 //assocations: user, purchaseItems(joinTable)

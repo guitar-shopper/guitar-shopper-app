@@ -1,5 +1,7 @@
 'use strict'
 
+// OB/BJM: dead code keep out of master, bury it
+
 const {STRING} = require('sequelize')
 
 module.exports = db => db.define('favorites')

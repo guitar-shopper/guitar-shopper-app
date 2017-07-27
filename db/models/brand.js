@@ -2,6 +2,7 @@
 
 const Sequelize = require('sequelize')
 
+// OB/BJM: inconsistent indentation (stay consistent)
 module.exports = db => db.define('brands', {
     name: {
         type: Sequelize.STRING,

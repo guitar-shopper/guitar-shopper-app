@@ -7,6 +7,7 @@ module.exports = db => db.define('purchaseItems', {
         type: Sequelize.DATE,
         defaultValue: Sequelize.NOW
     },
+    // OB/BJM: capture guitar price
 })
 
 //associations: user, guitar, order, 

@@ -35,5 +35,5 @@ module.exports = require('express').Router()
                     id: req.params.id
                 }
             })
-                .then(brand => res.json(brand))
+                .then(brand => res.json(brand)) // OB/BJM: not sure that destroy will give back the thing you destroyed—instead you can just send an empty response (204 status)
                 .catch(next));

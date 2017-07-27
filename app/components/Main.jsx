@@ -12,7 +12,7 @@ export default class Main extends Component {
 
     componentDidMount() {
         const guitarsThunk = fetchAllGuitars();
-        store.dispatch(guitarsThunk);
+        store.dispatch(guitarsThunk); // OB/BJM: opportunity to use connect instead
 
         const brandsThunk = fetchAllBrands();
         store.dispatch(brandsThunk);

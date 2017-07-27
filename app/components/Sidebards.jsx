@@ -50,5 +50,9 @@ const mapDispatchToProps = (dispatch) => {
     }
   }
 }
+// OB/BJM: object format for mapDispatchToProps...
+// const mapDispatchToProps = {
+//   filterGuitars
+// };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Sidebar);

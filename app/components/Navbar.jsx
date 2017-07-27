@@ -4,10 +4,10 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 
 
 /* -----------------    COMPONENT     ------------------ */
-
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
+    // OB/BJM: can use arrow function in class syntax
     this.renderLoginSignup = this.renderLoginSignup.bind(this);
     this.renderLogout = this.renderLogout.bind(this);
   }

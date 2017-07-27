@@ -6,6 +6,7 @@ module.exports = db => db.define('guitars', {
   model: {
     type: Sequelize.STRING,
     allowNull: false,
+    // OB/BJM: consider notEmpty validation
   },
   category: {
     type: Sequelize.STRING,
@@ -21,13 +22,15 @@ module.exports = db => db.define('guitars', {
   imageURL: {
     type: Sequelize.STRING,
     // allowNull: false
+    // OB/BJM: consider url validations (be aware this can have issues with some urls)
   },
   price: {
-    type: Sequelize.FLOAT,
+    type: Sequelize.FLOAT, // OB/BJM: switch to integer and measure in cents
     allowNull: false
   }
 })
 
+// OB/BJM: undead code, bury it! (history will always have this)
 // module.exports.associations = (Thing, {User, Favorite}) => {
 //   Thing.belongsToMany(User, {as: 'lovers', through: Favorite})
 // }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
+// OB/BJM: BUNCH of dead code
 // import { removeUser } from '../../redux/users';
 // import { removeStory } from '../../redux/stories';
 
@@ -30,8 +31,9 @@ class GuitarItem extends React.Component {
               <span placeholder="Jean Doe">{guitar.model}</span>
             </h4>
             <h5 className="tucked">
-              
-              <span>BRAND BRO: {brands[0] && brands[+guitar.brand_id - 1].name}</span>
+              {/* OB/BJM: maybe don't even render the span if there's no brand */}
+              {/* OB/BJM: watch out for using ids as array indexes: try eager loading or explicitly searching for that branch by id in the array */}
+              <span>BRAND BRO: {brands[0] && brands.find[+guitar.brand_id - 1].name}</span>
             </h5>
             <h5 className="tucked">
               <span>{guitar.category}</span>

@@ -12,6 +12,7 @@ export const getAllGuitars = (guitars) => {
   }
 }
 
+// OB/BJM: consider naming here
 export const getOneGuitar = (guitar) => {
   return {
     type: GET_ONE_GUITAR,

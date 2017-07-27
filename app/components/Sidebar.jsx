@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 
 class Sidebar extends Component {
 
+  // OB/BJM: unnecessary, nothing special is happening in constructor
   constructor(props) {
     super(props)
   }

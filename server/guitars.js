@@ -21,6 +21,7 @@ module.exports = require('express').Router()
     .put('/:id',
     // mustBeLoggedIn,
     (req, res, next) =>
+        // OB/BJM: watch out, class method update might not run validations, also might need "returning" set to true
         Guitar.update(req.body, {where: {id:req.params.id}})
             .then(guitar => res.json(guitar))
             .catch(next))

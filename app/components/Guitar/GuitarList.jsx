@@ -81,6 +81,7 @@ class GuitarList extends Component {
   }
 
   filterGuitar(guitar) {
+    // OB/BJM: regular expressions are slow create
     const nameMatch  = new RegExp(this.state.name, 'i');
     // const emailMatch = new RegExp(this.state.email, 'i');
     // const phoneMatch = new RegExp(this.state.phone, 'i');
