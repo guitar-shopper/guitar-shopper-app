@@ -5,8 +5,7 @@ const Brand = db.model('brands')
 module.exports = require('express').Router()
     .get('/',
     (req, res, next) =>
-        Guitar.findAll({include: [{association: 'brand_id'}]
-        })
+        Guitar.findAll({include: [{model: Brand}]})
             .then(guitars => res.json(guitars))
             .catch(next))
     .post('/',
