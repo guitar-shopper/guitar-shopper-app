@@ -219,6 +219,8 @@ const brands = seed(Brand, {
    },
 });
 
+// console.log('~~~~', Favorite)
+//
 const cartItems = seed(Carts_Guitars,
   // We're specifying a function here, rather than just a rows object.
   // Using a function lets us receive the previously-seeded rows (the seed
@@ -323,6 +325,8 @@ function seed(Model, rows) {
  }
 }
 
+// module.exports = Object.assign(seed, {users, things, favorites});
 module.exports = Object.assign(seed, {users, guitars, brands});
+// module.exports = Object.assign(seed, { users });
 
 

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 // utils funcs
-import { calculateTotalPrice } from '../../utils/reactUtils';
+import { calculateTotalPrice } from '../utils/reactUtils';
 
 class CartSideBar extends Component {
 
@@ -41,6 +41,12 @@ const mapStateToProps = (state) => {
     cart: state.cart,
     auth: state.auth
   }
-};
+}
 
-export default connect(mapStateToProps)(CartSideBar);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    //stuff
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(CartSideBar);

@@ -22,6 +22,11 @@ module.exports = db => db.define('brands', {
     img: Sequelize.STRING
 });
 
+
+// module.exports.associations = (Thing, {User, Favorite}) => {
+//   Thing.belongsToMany(User, {as: 'lovers', through: Favorite})
+// }
+
 module.exports.associations = (Brand, {Guitar}) => {
     Brand.hasMany(Guitar)
 };
