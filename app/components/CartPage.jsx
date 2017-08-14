@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrent } from 'APP/app/reducers/cart'
-import GuitarItem from '../Guitar/GuitarItem';
+import GuitarItem from './Guitar/GuitarItem';
 import CartSideBar from './CartSideBar';
 
 /* -----------------    COMPONENT     ------------------ */
@@ -48,6 +48,8 @@ class Cart extends Component {
 
 import { removeFromCart } from 'APP/app/reducers/cart'
 const mapState = ({cart, auth}) => ({cart, auth});
+
+// const mapDispatch = { addUser };
 
 export default connect(mapState, {getCurrent, removeFromCart})(Cart);
 

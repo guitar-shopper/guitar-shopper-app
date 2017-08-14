@@ -28,6 +28,10 @@ module.exports = db => db.define('guitars', {
   }
 })
 
+// module.exports.associations = (Thing, {User, Favorite}) => {
+//   Thing.belongsToMany(User, {as: 'lovers', through: Favorite})
+// }
+
 module.exports.associations = (Guitar, { Brand }) => {
   Guitar.belongsTo(Brand)
 }

@@ -7,7 +7,7 @@ export const getAllBrands = (brands) => {
     type: GET_ALL_BRANDS,
     brands
   }
-};
+}
 
 export default (brands = [], action) => {
   switch (action.type) {
@@ -26,4 +26,4 @@ export const fetchAllBrands = () => (dispatch) => {
   .then(brands => {
     dispatch(getAllBrands(brands));
   })
-};
+}
