@@ -6,7 +6,7 @@
        "browsers": ["last 2 versions"],
        "node": "current"
      },
-     "debug": false, // `true` outputs which plugins are used and why
+     "debug": false,
      "useBuiltIns": true // reduces `babel-polyfill` in `main.jsx` to a subset of polyfills
    }],
    "stage-2"

@@ -6,8 +6,6 @@ import thunkMiddleware from 'redux-thunk'
 
 import {whoami} from './reducers/auth'
 
-import {fetchAllGuitars} from './reducers/guitars'
-
 const store = createStore(
   rootReducer,
   composeWithDevTools(

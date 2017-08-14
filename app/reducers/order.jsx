@@ -7,7 +7,7 @@ export const updateOrder = (order) => {
     type: UPDATE_ORDER,
     order
   }
-}
+};
 
 // Reducer
 export default (order = {}, action) => {
@@ -20,4 +20,4 @@ export default (order = {}, action) => {
     default:
       return order;
   }
-}
+};

@@ -44,7 +44,6 @@ export const postGuitar = guitar => dispatch => {
           .then(res => res.data)
           .then(newGuitar => {
             dispatch(getOneGuitar(newGuitar));
-            // dispatch(action);
           })
 }
 

@@ -6,12 +6,12 @@ const reducer = (state="", action) => {
     return action.user
   }
   return state
-}
+};
 
-const AUTHENTICATED = 'AUTHENTICATED'
+const AUTHENTICATED = 'AUTHENTICATED';
 export const authenticated = user => ({
   type: AUTHENTICATED, user
-})
+});
 
 export const signUp = (name, email, password) =>
     dispatch =>
@@ -19,7 +19,7 @@ export const signUp = (name, email, password) =>
             {name, email, password})
             .then(() => login(email, password)(dispatch))
             .then(() => dispatch(whoami()))
-            .catch(() => dispatch(whoami()))
+            .catch(() => dispatch(whoami()));
 
 export const login = (username, password) =>
   dispatch =>

@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import Navbar from './Navbar';
-import BrandList from './BrandList';
+import BrandList from './Brand/BrandList';
 import GuitarList from './Guitar/GuitarList'
-import SingleBrand from './SingleBrand';
-import SingleGuitar from './SingleGuitar1';
+import SingleBrand from './Brand/SingleBrand';
+import SingleGuitar from './Guitar/SingleGuitar1';
 import Login from './Login'
 import Signup from './Signup'
 import Home from './Home';
 import store from '../store';
-import CartPage from './CartPage'
+import CartPage from './Cart/CartPage'
 import Checkout from './Checkout'
 
 import { fetchAllBrands } from '../reducers/brands';

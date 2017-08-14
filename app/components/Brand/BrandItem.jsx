@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, NavLink } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 export default class BrandItem extends Component {
 
@@ -18,7 +17,6 @@ export default class BrandItem extends Component {
                         className="media-body media-middle"
                         activeClassName="active"
                         to={`/brands/${brand.id}`}>
-                        {/*<img className="logo" src={brand.img} alt={brand.name}></img>*/}
                         <h4 className="media-heading tucked">
                             <span placeholder="Brand...">{brand.name}</span>
                         </h4>

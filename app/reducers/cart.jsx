@@ -16,19 +16,19 @@ export const setCurrentCart = (cart) => {
     type: SET_CURRENT_CART,
     cart
   }
-}
+};
 
 export const clearCart = () => {
   return {
     type: CLEAR_CART
   }
-}
+};
 
 export const getCart = () => {
   return {
     type: GET_CART
   }
-}
+};
 
 //Reducer
 export default (cart = {}, action) => {

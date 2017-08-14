@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import CartSideBar from './CartSideBar';
+import CartSideBar from './Cart/CartSideBar';
 
 import { checkout } from '../reducers/cart';
 
@@ -137,10 +137,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     checkout(body) {
-      console.log('herro body...', body)
       dispatch(checkout(body));
     }
   }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Checkout);

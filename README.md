@@ -1,86 +1,32 @@
-# Hi, I'm bones
+# GuitarShopper
 
-I'm a happy little skeleton. You can clone me to use as a starter on your projects!
-I have React, Redux, Sequelize, and Express all just rattling around in here ready
-to go.
+Guitar Shopper is an e-commerce web app for a fictional guitar retailer. It's my first full stack web app, so there's certainly room for improvement, but overall I'm happy with how it turned out.
 
-## I need node >= 6.7.0
+This project was built over the course of 4 days for the 'Grace Shopper' portion of Fullstack Academy's software engineering curriculum. The assignment was to build a fully-functional e-commerce app. Beyond that, our team had full creative control.
 
-If you don't have it, I'll complain and tell you how to install it.
+I worked on a three person team, with Matthew Snow (@Msnow90) and Mikhail Qader (@mhq2101). Big thanks to the Fullstack engineering team for providing 'Bones,' the boilerplate on which GuitarShopper was written. 
 
-## 1. Make me into something!
+# Clickthrough Demo
+https://youtu.be/Q2864EceR2o (1.5x speed recommended)
 
-We recommend that you **clone**, not fork, this repo – unless your intention is
-to develop Bones proper instead of using Bones as the starting point for your
-own application.
+# Overall Comments
+Things I like:
+  - How the guitars are laid out on the homepage.
+  - The checkbox filtering functionality.
+  - Local and OAuth login.
+  - Cart functionality.
+  - All brands page and individual brands pages.
+  - The picture of the rolling stones by Ethan Russell. 
+  (https://shop.ethanrussell.com/collections/the-amazing-keith/products/the-rolling-stones-on-stage-champaign-illinois-1969)
 
-Start by doing either of the following:
+Things I don't like:
+- We didn't follow 'best practices' well enough. More specifically, I would've liked to have seen clearer, more professional git commit messages, and a more uniform coding style throughout. 
+- We left styling for last, which meant that we ended up running out of time for some styling features.
+    - Sidebar, while functional, looks like it was just scrapped together.
+    - Cart page and single guitar page look sloppy/uneven.
+- Not a single test!!!!!!
 
-* Create a GitHub repo and clone it, or
-* `git init` in an empty directory on your machine.
+# Conclusion
+I had a great time building this project. Even though we didn't get as far as I would've liked, I loved working with Snow and Mikhail. I couldn't have asked for a better team dynamic, and I hope I have the opportunity to work with them in the future.
 
-After you have a repo on your machine:
-
-```sh
-git remote add bones https://github.com/1706-FSA-NY/bones.git
-git fetch bones
-git merge bones/master
-```
-
-And then you'll have me! If I change – which I probably will – you can get the most recent
-version by doing this again:
-
-```sh
-git fetch bones
-git merge bones/master
-```
-
-## 2. I need a name.
-
-I don't have a name. I think I used to have one, but it turned to dust right along with my
-heart and liver and pituitary gland and all that stuff.
-
-Anyway, I'll need one. Give me a name in `package.json`.
-
-## 3. Start my dusty heart
-
-Short and sweet:
-
-```sh
-npm install
-npm run dev
-```
-
-The `dev` script sets `NODE_ENV` to "development", runs the build script in watch mode, and
-starts the server with `nodemon`. Build vs server logs are separated by a prefix. If you prefer
-to run the server and build processes separately, you can instead do:
-
-```sh
-npm run start-dev
-```
-
-```sh
-npm run build-dev
-```
-
-In two separate terminals. The vanilla `npm start` is for production — you won't use it in development!
-
-## My anatomy
-
-`/app` has the React/Redux setup. `main.jsx` is the entry point.
-
-`/db` has the Sequelize models and database setup. It'll create the database for you if it doesn't exist,
-assuming you're using postgres.
-
-`/server` has the Express server and routes. `start.js` is the entry point.
-
-`/bin` has scripts. (Right now it has *one* script that creates a useful symlink.)
-
-## Conventions
-
-I use `require` and `module.exports` in `.js` files.
-
-I use `import` and `export` in `.jsx` files, unless `require` makes for cleaner code.
-
-I use two spaces, no semi-colons, and trailing commas where possible. I'll
-have a linter someday soon.
+Thanks for checking out our repo!
